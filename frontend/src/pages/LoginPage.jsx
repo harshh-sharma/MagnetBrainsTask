@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Importing eye icons
 import { login } from '../redux/slices/authSlice';
 
@@ -60,8 +60,8 @@ const Login = () => {
           </button>
         </form>
         <div className="flex justify-between mt-4 text-indigo-500 text-sm">
-          <a href="/forgot-password" className="hover:text-white">Forgot Password?</a>
-          <a href="/register" className="hover:text-indigo-500">Create an Account</a>
+          <p className="hover:text-white">Forgot Password?</p>
+          <Link to={'/register'}  className="hover:text-indigo-500">Create an Account</Link>
         </div>
       </div>
     </div>

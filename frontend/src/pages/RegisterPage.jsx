@@ -135,7 +135,7 @@ const Register = () => {
 
         {/* Login Link */}
         <div className="flex justify-between mt-4 text-gray-400 text-sm">
-          <a href="/login" className="hover:text-indigo-500">Already have an account? Login</a>
+          <a href="/login" className="text-black hover:text-indigo-500">Already have an account? Login</a>
         </div>
       </div>
     </div>
